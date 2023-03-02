@@ -1,8 +1,9 @@
 n = int(input())
-if n <= 10 or n >= 20:
-    if (n % 10) == 0 or ((n % 10) >= 5 and (n % 10) <= 9):
+m=n%100
+if m <= 10 or m >= 20:
+    if (m % 10) == 0 or ((m % 10) >= 5 and (m % 10) <= 9):
         print(str(n) + " bochek")
-    elif (n % 10) == 1:
+    elif (m % 10) == 1:
         print(str(n) + " bochka")
     else:
         print(str(n) + " bochki")
